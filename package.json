@@ -1,0 +1,20 @@
+{
+  "name": "letafo",
+  "version": "1.0.0",
+  "description": "NodeJS package that gets information about your Letovo student account.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "letafo",
+    "letovo",
+    "account",
+    "info"
+  ],
+  "author": "Milk_Cool",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^10.2.0"
+  }
+}

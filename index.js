@@ -7,7 +7,7 @@ http.createServer((req, res) => {
 		res.setHeader("Content-Type", "text/plain");
 		req.on('data', chunk => {
 			chunk = JSON.parse(chunk);
-			console.log(JSON.stringify(chunk));
+			// console.log(JSON.stringify(chunk)); / Убрано из-за соображений безопасности.
 			try{
 				(async () => {
 					const browser = await puppeteer.launch({args: ["--no-sandbox", "--disable-setuid-sandbox"]});

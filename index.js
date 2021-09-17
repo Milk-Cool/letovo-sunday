@@ -25,6 +25,7 @@ http.createServer((req, res) => {
 					res.end(await page.evaluate(element => element.textContent, await page.$("#nav-tray-portal > span > span > div > div > div > div > div > span > div > h2")));
 					await browser.close();
 				})();
+			}
 			catch(e){
 				res.end("ERR");
 			}

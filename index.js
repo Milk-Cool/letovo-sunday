@@ -53,5 +53,5 @@ http.createServer((req, res) => {
 			}
 		});
 	}, 0);
-}).listen(/*process.env.PORT || */8080);
+}).listen(process.env.PORT || 8080);
 console.log("Port: " + process.env.PORT || 8080);

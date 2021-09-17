@@ -27,8 +27,6 @@ http.createServer((req, res) => {
 					await page.click("#global_nav_profile_link");
 					await page.waitForSelector("#nav-tray-portal > span > span > div > div > div > div > div > span > div > h2");
 					const o1 = await page.evaluate(element => element.textContent, await page.$("#nav-tray-portal > span > span > div > div > div > div > div > span > div > h2"));
-					/*await page.waitForSelector("#nav-tray-portal > span > span > div > div > div > div > div > ul > li:nth-child(2) > div > a");
-					await page.click("#nav-tray-portal > span > span > div > div > div > div > div > ul > li:nth-child(2) > div > a");*/
 					await page.waitForSelector("#edit_profile_form > div > div.image-block-image.profile-avatar-wrapper > a");
 					const o2 = await page.evaluate(() => getComputedStyle(document.querySelector("#edit_profile_form > div > div.image-block-image.profile-avatar-wrapper > a")).backgroundImage);
 					const o3 = await page.evaluate(() => document.querySelector("#breadcrumbs > ul > li:nth-child(2) > a").getAttribute("href"));
@@ -48,7 +46,6 @@ http.createServer((req, res) => {
 					await browser.close();
 				})().catch(err => {
 					res.end("ERR");
-					console.error(err); //УБРАТЬ НА ПРОДЕ
 				});
 			}
 			catch(e){

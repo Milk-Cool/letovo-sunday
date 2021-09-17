@@ -4,7 +4,6 @@
   "description": "NodeJS package that gets information about your Letovo student account.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run build",
     "start": "node index.js"
   },
   "keywords": [

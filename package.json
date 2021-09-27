@@ -1,0 +1,20 @@
+{
+  "name": "letsasm",
+  "version": "1.0.0",
+  "description": "LETovo Sunday Accounts Storage Manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "letovo",
+    "account"
+  ],
+  "author": "Milk_Cool",
+  "license": "ISC",
+  "engines": {
+    "node": "13.1.0",
+    "npm": "6.12.1",
+    "yarn": "1.19.1"
+  }
+}
